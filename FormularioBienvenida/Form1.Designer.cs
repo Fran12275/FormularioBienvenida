@@ -35,14 +35,14 @@
             lblResultado = new Label();
             btnAceptar = new Button();
             btnLimpiar = new Button();
-            hlpEdad = new HelpProvider();
             lblAyuda = new Label();
+            lblCurso = new Label();
             SuspendLayout();
             // 
             // lblNombre
             // 
             lblNombre.AutoSize = true;
-            lblNombre.Location = new Point(230, 162);
+            lblNombre.Location = new Point(307, 167);
             lblNombre.Name = "lblNombre";
             lblNombre.Size = new Size(54, 15);
             lblNombre.TabIndex = 0;
@@ -50,14 +50,14 @@
             // 
             // txtNombre
             // 
-            txtNombre.Location = new Point(290, 160);
+            txtNombre.Location = new Point(367, 159);
             txtNombre.Name = "txtNombre";
             txtNombre.Size = new Size(101, 23);
             txtNombre.TabIndex = 1;
             // 
             // txtEdad
             // 
-            txtEdad.Location = new Point(290, 207);
+            txtEdad.Location = new Point(367, 207);
             txtEdad.Name = "txtEdad";
             txtEdad.Size = new Size(101, 23);
             txtEdad.TabIndex = 2;
@@ -65,7 +65,7 @@
             // lblEdad
             // 
             lblEdad.AutoSize = true;
-            lblEdad.Location = new Point(248, 210);
+            lblEdad.Location = new Point(325, 210);
             lblEdad.Name = "lblEdad";
             lblEdad.Size = new Size(36, 15);
             lblEdad.TabIndex = 3;
@@ -74,7 +74,7 @@
             // lblResultado
             // 
             lblResultado.AutoSize = true;
-            lblResultado.Location = new Point(248, 325);
+            lblResultado.Location = new Point(345, 333);
             lblResultado.Name = "lblResultado";
             lblResultado.Size = new Size(150, 15);
             lblResultado.TabIndex = 4;
@@ -82,7 +82,7 @@
             // 
             // btnAceptar
             // 
-            btnAceptar.Location = new Point(248, 274);
+            btnAceptar.Location = new Point(337, 274);
             btnAceptar.Name = "btnAceptar";
             btnAceptar.Size = new Size(76, 23);
             btnAceptar.TabIndex = 5;
@@ -92,7 +92,7 @@
             // 
             // btnLimpiar
             // 
-            btnLimpiar.Location = new Point(329, 274);
+            btnLimpiar.Location = new Point(419, 274);
             btnLimpiar.Name = "btnLimpiar";
             btnLimpiar.Size = new Size(76, 23);
             btnLimpiar.TabIndex = 6;
@@ -100,25 +100,31 @@
             btnLimpiar.UseVisualStyleBackColor = true;
             btnLimpiar.Click += btnLimpiar_Click;
             // 
-            // hlpEdad
-            // 
-            hlpEdad.HelpNamespace = "Se debe añadir una edad positiva";
-            // 
             // lblAyuda
             // 
             lblAyuda.AutoSize = true;
             lblAyuda.Font = new Font("Segoe UI", 7F);
-            lblAyuda.Location = new Point(290, 233);
+            lblAyuda.Location = new Point(367, 233);
             lblAyuda.Name = "lblAyuda";
             lblAyuda.Size = new Size(116, 12);
             lblAyuda.TabIndex = 7;
             lblAyuda.Text = "La edad debe ser positiva";
+            // 
+            // lblCurso
+            // 
+            lblCurso.AutoSize = true;
+            lblCurso.Location = new Point(329, 426);
+            lblCurso.Name = "lblCurso";
+            lblCurso.Size = new Size(166, 15);
+            lblCurso.TabIndex = 8;
+            lblCurso.Text = "Desarrollo de Interfaces · DAM";
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(799, 450);
+            Controls.Add(lblCurso);
             Controls.Add(lblAyuda);
             Controls.Add(btnLimpiar);
             Controls.Add(btnAceptar);
@@ -142,7 +148,7 @@
         private Label lblResultado;
         private Button btnAceptar;
         private Button btnLimpiar;
-        private HelpProvider hlpEdad;
         private Label lblAyuda;
+        private Label lblCurso;
     }
 }
