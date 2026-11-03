@@ -115,9 +115,9 @@
             lblCurso.AutoSize = true;
             lblCurso.Location = new Point(329, 426);
             lblCurso.Name = "lblCurso";
-            lblCurso.Size = new Size(166, 15);
+            lblCurso.Size = new Size(183, 15);
             lblCurso.TabIndex = 8;
-            lblCurso.Text = "Desarrollo de Interfaces · DAM";
+            lblCurso.Text = "Desarrollo de Interfaces · 2.º DAM";
             // 
             // Form1
             // 
