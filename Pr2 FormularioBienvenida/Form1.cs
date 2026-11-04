@@ -35,5 +35,25 @@ namespace FormularioBienvenida
             txtEdad.Clear();
             lblResultado.Text = "";
         }
+
+        private void lblNombre_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblEdad_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblResultado_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

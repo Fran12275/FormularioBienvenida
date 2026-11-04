@@ -42,22 +42,26 @@
             // lblNombre
             // 
             lblNombre.AutoSize = true;
-            lblNombre.Location = new Point(307, 167);
+            lblNombre.ForeColor = Color.Yellow;
+            lblNombre.Location = new Point(307, 125);
             lblNombre.Name = "lblNombre";
             lblNombre.Size = new Size(54, 15);
             lblNombre.TabIndex = 0;
             lblNombre.Text = "Nombre:";
+            lblNombre.Click += lblNombre_Click;
             // 
             // txtNombre
             // 
-            txtNombre.Location = new Point(367, 159);
+            txtNombre.ForeColor = SystemColors.MenuHighlight;
+            txtNombre.Location = new Point(367, 122);
             txtNombre.Name = "txtNombre";
             txtNombre.Size = new Size(101, 23);
             txtNombre.TabIndex = 1;
             // 
             // txtEdad
             // 
-            txtEdad.Location = new Point(367, 207);
+            txtEdad.ForeColor = SystemColors.MenuHighlight;
+            txtEdad.Location = new Point(367, 164);
             txtEdad.Name = "txtEdad";
             txtEdad.Size = new Size(101, 23);
             txtEdad.TabIndex = 2;
@@ -65,24 +69,29 @@
             // lblEdad
             // 
             lblEdad.AutoSize = true;
-            lblEdad.Location = new Point(325, 210);
+            lblEdad.ForeColor = Color.Yellow;
+            lblEdad.Location = new Point(325, 167);
             lblEdad.Name = "lblEdad";
             lblEdad.Size = new Size(36, 15);
             lblEdad.TabIndex = 3;
             lblEdad.Text = "Edad:";
+            lblEdad.Click += lblEdad_Click;
             // 
             // lblResultado
             // 
             lblResultado.AutoSize = true;
-            lblResultado.Location = new Point(345, 333);
+            lblResultado.Font = new Font("Times New Roman", 9F, FontStyle.Italic, GraphicsUnit.Point, 0);
+            lblResultado.ForeColor = Color.White;
+            lblResultado.Location = new Point(343, 289);
             lblResultado.Name = "lblResultado";
-            lblResultado.Size = new Size(150, 15);
+            lblResultado.Size = new Size(140, 15);
             lblResultado.TabIndex = 4;
             lblResultado.Text = "Aqui aparecera el resultado";
+            lblResultado.Click += lblResultado_Click;
             // 
             // btnAceptar
             // 
-            btnAceptar.Location = new Point(337, 274);
+            btnAceptar.Location = new Point(307, 234);
             btnAceptar.Name = "btnAceptar";
             btnAceptar.Size = new Size(76, 23);
             btnAceptar.TabIndex = 5;
@@ -92,7 +101,7 @@
             // 
             // btnLimpiar
             // 
-            btnLimpiar.Location = new Point(419, 274);
+            btnLimpiar.Location = new Point(436, 234);
             btnLimpiar.Name = "btnLimpiar";
             btnLimpiar.Size = new Size(76, 23);
             btnLimpiar.TabIndex = 6;
@@ -104,7 +113,8 @@
             // 
             lblAyuda.AutoSize = true;
             lblAyuda.Font = new Font("Segoe UI", 7F);
-            lblAyuda.Location = new Point(367, 233);
+            lblAyuda.ForeColor = SystemColors.ButtonHighlight;
+            lblAyuda.Location = new Point(367, 190);
             lblAyuda.Name = "lblAyuda";
             lblAyuda.Size = new Size(116, 12);
             lblAyuda.TabIndex = 7;
@@ -123,6 +133,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.ActiveCaption;
             ClientSize = new Size(799, 450);
             Controls.Add(lblCurso);
             Controls.Add(lblAyuda);
@@ -135,6 +146,7 @@
             Controls.Add(lblNombre);
             Name = "Form1";
             Text = "Form1";
+            Load += Form1_Load;
             ResumeLayout(false);
             PerformLayout();
         }
